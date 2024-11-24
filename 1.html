@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCare Experts - Swargate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="AutoCare Experts Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#booking">Book Appointment</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Slider -->
+<section id="home" class="hero">
+    <!-- Background overlay for better text readability -->
+    <div class="hero-background"></div>
+    <div class="slider">
+        <div class="slide active">
+            <img src="background.png" alt="Workshop Image 1">
+            <div class="slide-content">
+                <div class="content-wrapper">
+                    <h1>Expert Auto Care in Swargate</h1>
+                    <p>Professional service you can trust</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="background.png" alt="Workshop Image 2">
+            <div class="slide-content">
+                <div class="content-wrapper">
+                    <h1>State-of-the-art Equipment</h1>
+                    <p>Modern solutions for modern vehicles</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="background.png" alt="Workshop Image 3">
+            <div class="slide-content">
+                <div class="content-wrapper">
+                    <h1>Customer Satisfaction Guaranteed</h1>
+                    <p>Join our satisfied customer family</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-dots"></div>
+</section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-oil-can"></i>
+                <h3>Oil Change</h3>
+                <p>Regular maintenance for optimal performance</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-car-battery"></i>
+                <h3>Battery Service</h3>
+                <p>Testing and replacement services</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-cogs"></i>
+                <h3>Engine Repair</h3>
+                <p>Complete engine diagnostics and repair</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-car-crash"></i>
+                <h3>Body Work</h3>
+                <p>Professional denting and painting</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <h2 class="section-title">Book an Appointment</h2>
+        <form id="booking-form" class="booking-form">
+            <div class="form-group">
+                <input type="text" id="name" required placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" required placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phone" required placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <select id="service" required>
+                    <option value="">Select Service</option>
+                    <option value="oil-change">Oil Change</option>
+                    <option value="battery">Battery Service</option>
+                    <option value="engine">Engine Repair</option>
+                    <option value="body-work">Body Work</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Book Now</button>
+        </form>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2 class="section-title">Our Workshop</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="Workshop1.jpg" alt="Workshop Image">
+            </div>
+            <div class="gallery-item">
+                <img src="Workshop2.jpg" alt="Workshop Image">
+            </div>
+            <div class="gallery-item">
+                <img src="Workshop3.jpg" alt="Workshop Image">
+            </div>
+            <div class="gallery-item">
+                <img src="Workshop4.jpg" alt="Workshop Image">
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2 class="section-title">Customer Testimonials</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>"Best service in Swargate! They fixed my car's AC in no time."</p>
+                    <h4>- Rahul Sharma</h4>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>"Very professional and honest mechanics. Highly recommended!"</p>
+                    <h4>- Priya Patel</h4>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>"Fair pricing and excellent service quality. Will come back!"</p>
+                    <h4>- Amit Kumar</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <h2 class="section-title">Maintenance Tips</h2>
+        <div class="blog-grid">
+            <article class="blog-card">
+                <img src="img1.png" alt="Blog Image">
+                <div class="blog-content">
+                    <h3>Basic Car Maintenance Tips</h3>
+                    <p>Learn how to keep your car in top condition...</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <img src="img2.png" alt="Blog Image">
+                <div class="blog-content">
+                    <h3>When to Change Your Oil</h3>
+                    <p>Understanding the importance of regular oil changes...</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <img src="img3.png" alt="Blog Image">
+                <div class="blog-content">
+                    <h3>Tire Maintenance Guide</h3>
+                    <p>Everything you need to know about tire care...</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2 class="section-title">Contact Us</h2> <!-- This is above the container -->
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>123 Swargate Main Road, Pune, Maharashtra</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>+91 1234567890</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>info@autocare-experts.com</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <p>Mon-Sat: 9:00 AM - 7:00 PM</p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Providing quality auto repair services in Swargate since 2010. Trust our expert mechanics for all your vehicle needs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#booking">Book Appointment</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AutoCare Experts. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
